@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin; /* Firefox */
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #3a1e1e;
+    border-radius: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+  }
+}
+
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
